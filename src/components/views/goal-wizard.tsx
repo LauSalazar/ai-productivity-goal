@@ -128,7 +128,7 @@ export function GoalWizard({ onClose }: WizardProps) {
   ]);
 
   return (
-    <div className="max-w-3xl mx-auto space-y-6">
+    <div className="max-w-3xl mx-auto space-y-6 pb-2">
       <div className="flex items-center justify-between">
         <Button variant="ghost" size="sm" onClick={onClose} className="ml-2">
           <X size={18} />

@@ -16,8 +16,12 @@ export default function HomePage() {
         <main className="flex-1 px-4 sm:px-6 lg:px-8 pt-4 pb-12">
           <Router onCreateGoal={() => setWizardOpen(true)} />
           {wizardOpen && (
-            <div className="fixed inset-0 z-50 bg-[#18181b]/40 backdrop-blur-sm">
-              <GoalWizard onClose={() => setWizardOpen(false)} />
+            <div className="fixed inset-0 z-50 overflow-y-auto bg-[#18181b]/40 backdrop-blur-sm p-4 sm:p-6">
+              <div className="min-h-full flex items-start justify-center py-4">
+                <div className="w-full max-w-3xl">
+                  <GoalWizard onClose={() => setWizardOpen(false)} />
+                </div>
+              </div>
             </div>
           )}
         </main>
